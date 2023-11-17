@@ -4,12 +4,23 @@ Youtube: https://youtu.be/Z0K3uEbf64M
 
 Github: https://github.com/teckyio/bonus-workdshop-java-spring-boot-for-nodejs-developer
 
-## steps
+## Key Steps
 
-- [x] design database
-  - [x] define DAO
-- [x] define API
-  - [x] define DTO
-- [x] implement API (controller, service)
-- [x] try in API client
+- design database
+  - design erd.txt
+  - generate and run migration
+  - generate DAO (Entity, Repository)
+- define API
+  - design api.txt
+  - generate DTO, Controller, Service
+  - define fields in DTO
+- implement API (controller, service)
+- try in API client (Insomnia)
 
+## Cli Tools
+
+- [quick-erd](https://www.npmjs.com/package/quick-erd)
+  - `erd-to-spring pg < erd.txt`
+  - `auto-migrate pg < erd.txt`
+- [gen-spring](https://www.npmjs.com/package/gen-spring)
+  - `gen-api < api.txt`
