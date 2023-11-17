@@ -1,0 +1,7 @@
+GET /categories
+GET /categories/:id/foods
+
+POST /foods/:id/order
+
+GET /orders
+DELETE /orders/:id
